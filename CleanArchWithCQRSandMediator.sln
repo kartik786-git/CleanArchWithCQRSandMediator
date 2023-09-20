@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRSandMediator.API", "CleanArchWithCQRSandMediator.API\CleanArchWithCQRSandMediator.API.csproj", "{0A16E167-80C6-4FFD-9559-3AC8EA24514A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchWithCQRSandMediator.API", "CleanArchWithCQRSandMediator.API\CleanArchWithCQRSandMediator.API.csproj", "{0A16E167-80C6-4FFD-9559-3AC8EA24514A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRSandMediator.Domain", "CleanArchWithCQRSandMediator.Domain\CleanArchWithCQRSandMediator.Domain.csproj", "{E0084140-5B8F-450D-84C4-262C470733D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchWithCQRSandMediator.Domain", "CleanArchWithCQRSandMediator.Domain\CleanArchWithCQRSandMediator.Domain.csproj", "{E0084140-5B8F-450D-84C4-262C470733D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRSandMediator.Application", "CleanArchWithCQRSandMediator.Application\CleanArchWithCQRSandMediator.Application.csproj", "{9CB052D9-99C7-4D1D-A657-811F90A9F0EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchWithCQRSandMediator.Application", "CleanArchWithCQRSandMediator.Application\CleanArchWithCQRSandMediator.Application.csproj", "{9CB052D9-99C7-4D1D-A657-811F90A9F0EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRSandMediator.Infra", "CleanArchWithCQRSandMediator.Infra\CleanArchWithCQRSandMediator.Infra.csproj", "{B42284B0-766A-4B82-9EB1-B4C796412F93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchWithCQRSandMediator.Infra", "CleanArchWithCQRSandMediator.Infra\CleanArchWithCQRSandMediator.Infra.csproj", "{B42284B0-766A-4B82-9EB1-B4C796412F93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
