@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using CleanArchWithCQRSandMediator.Domain.Repository;
+using CleanArchWithCQRSandMediator.Infra.Data;
+using CleanArchWithCQRSandMediator.Infra.Repository;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -14,6 +18,12 @@ namespace CleanArchWithCQRSandMediator.Infra
             (this IServiceCollection services, IConfiguration configuration ) 
         
         {
+            services.AddDbContext<BlogDbContext>(options =>
+                options.UseSqlite(configuration.GetConnectionString("BlogdbContext") ??
+                    throw new InvalidOperationException("connection string 'Blogdbcontext not found '"))
+            );
+
+            services.AddTransient<IBlogRepository, BlogRepository>();
             return services;
         
         }
