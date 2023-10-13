@@ -19,8 +19,8 @@ namespace CleanArchWithCQRSandMediator.Infra
         
         {
             services.AddDbContext<BlogDbContext>(options =>
-                options.UseSqlite(configuration.GetConnectionString("BlogdbContext") ??
-                    throw new InvalidOperationException("connection string 'Blogdbcontext not found '"))
+                options.UseSqlite(configuration.GetConnectionString("BlogBbContext") ??
+                    throw new InvalidOperationException("connection string 'BlogBbContext not found '"))
             );
 
             services.AddTransient<IBlogRepository, BlogRepository>();
