@@ -1,0 +1,10 @@
+﻿.firma-card {
+    background: white;
+    border: 3px solid;
+    border-color: #c7bdbd40;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 6px 10px -1px rgb(198, 207, 234);
+    margin-bottom: 1.6%;
+    overflow: hidden;
+}

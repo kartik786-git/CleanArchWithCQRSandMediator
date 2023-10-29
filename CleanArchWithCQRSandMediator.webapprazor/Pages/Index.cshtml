@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<p>
+    <a class="btn btn-primary fw-bold" asp-page="Create">Create New</a>
+</p>
+<div class="row">
+    @foreach (var item in Model.Blog)
+    {
+
+        <div class="col-sm-5 align-items-center card mb-2 m-1 firma-card">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="~/images/channel logo.png" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text"><small class="text-muted">Auther Name @item.Author</small></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="m-1">
+                <a class="btn btn-warning fw-bold" asp-page="./Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-success fw-bold" asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                <a class="btn btn-danger fw-bold" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </div>
+        </div>
+
+    }
+
+</div>

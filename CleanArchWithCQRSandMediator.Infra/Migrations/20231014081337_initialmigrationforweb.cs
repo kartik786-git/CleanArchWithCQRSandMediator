@@ -5,7 +5,7 @@
 namespace CleanArchWithCQRSandMediator.Infra.Migrations
 {
     /// <inheritdoc />
-    public partial class firstinisital : Migration
+    public partial class initialmigrationforweb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
