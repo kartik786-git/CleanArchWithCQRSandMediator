@@ -27,7 +27,8 @@ namespace CleanArchWithCQRSandMediator.Application.Blogs.Commands.CreateBlog
             {
                 Name = request.Name,
                 Description = request.Description,
-                Author = request.Author
+                Author = request.Author,
+                ImageUrl= request.ImageUrl,
             };
             var Result = await _blogRepository.CreateAsync(blogEnity);
             return _mapper.Map<BlogVm>(Result);
